@@ -6,68 +6,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
+    
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
+
     <link rel="stylesheet" href="css/aos.css">
+
     <link rel="stylesheet" href="css/ionicons.min.css">
+    
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Custom CSS for Layout Adjustments -->
-    <style>
-      /* General Reset */
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-      }
 
-      html {
-        font-family: sans-serif;
-        line-height: 1.15;
-      }
 
-      body {
-        margin: 0;
-        font-family: 'Arial', sans-serif;
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.5;
-        color: #212529;
-        background-color: #fff;
-      }
+<style>
 
-      img {
-        max-width: 100%;
-        height: auto;
-      }
+/*======================================
+//--//-->   ABOUT
+======================================*/
 
-      /* Custom CSS for Image Layout */
-      .container {
-        margin-top: 30px;
-      }
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 
-      /* Force Two Columns on Small Screens */
-      @media (max-width: 768px) {
-        .col-6 {
-          flex: 0 0 50%;
-          max-width: 50%;
-        }
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
 
-        .custom-col {
-          padding: 10px;
-        }
-      }
+.about-mf .about-img img {
+  margin-left: 10px;
+}
 
-      /* Additional styles for desktop (if needed) */
-      .col-md-6 {
-        padding: 20px;
-      }
-    </style>
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
   </head>
 
 
